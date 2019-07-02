@@ -258,6 +258,13 @@ Clip to your area of interest
 
 <img class="plain" src="./images/platform-webscene.png" background=none>
 
+---
+
+<!-- .slide: data-background="../images/bg-4.png" -->
+
+### ArcGIS Online: 3D Web Scenes
+Thursday, 1:00 pm - 2:00 pm<br/>
+SDCC - Room 15 B
 
 ---
 
@@ -1197,14 +1204,6 @@ sceneLayer.renderer = {
     <iframe id="scene-layer-mesh2" data-src="./snippets/concepts-renderer.html" ></iframe>
   </div>
 </div>
-
----
-
-<!-- .slide: data-background="../images/bg-4.png" -->
-
-### ArcGIS API for JavaScript: 3D Visualization
-Thursday, 10:00 am - 11:00 am<br/>
-Room 33C
 
 ---
 
