@@ -3,14 +3,41 @@
 
 ## Building <span style="color:#D9BA6F">3D</span> Apps <br/> with ArcGIS API for JavaScript
 
-<p>Gianluca Miele - Javier Gutierrez</p>
+<!--<p>Gianluca Miele - Javier Gutierrez</p>-->
+<p style="font-size: 75%"><br/>
+  Javier Gutierrez, Esri R&amp;D Center Z&uuml;rich<br/>
+  Gianluca Miele, Esri R&amp;D Center Z&uuml;rich
+</p>
+<p>
+  <small>Live version of this presentation:</small>
+</p>
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b> <span style="color:#D9BA6F">3D</span> GIS across industries</b>
+## Preface
 
+- This session is about the <span style="color:#D9BA6F">fundamentals of 3D in the Web</span><br>
+using the ArcGIS API for JavaScript
+- And about <span style="color:#D9BA6F">writing JavaScript & HTML!</span>
+
+<!-- Esri provides configurable applications
+  - [SceneViewer](https://www.esri.com/en-us/arcgis/products/3d-scene-viewer)
+  - [Story Maps](https://storymaps.arcgis.com/en/)
+  - [Web AppBuilder](https://www.esri.com/en-us/arcgis/products/web-appbuilder/overview)
+-->
+
+---
+
+<!-- .slide: data-background="../images/bg-2.png" -->
+
+### <b> 3D GIS <span style="color:#D9BA6F">across industries</span></b>
+
+<img class="plain" src="./images/3d-gis-industries.png" width="80%" style="border: none; background: none; box-shadow: none"/>
+
+
+<!--
 <br/>
 
 <div class="box" style="display:inline-block; width:650px">
@@ -18,21 +45,24 @@
 <div class="box" style="display:inline-block; width:50px"></div>
 <div class="box" style="display:inline-block; width:650px">
 <iframe id="scene-view-map-view" data-src="https://www.arcgis.com/home/webscene/viewer.html?webscene=43e1b988e55a44fdad6c5cf58c34dbda&ui=min"></iframe></div>
+-->
 
 ---
 
 <!-- .slide: data-background="../images/bg-1.png" -->
 ### <b>Agenda</b>
+- 3D Platform | Data | API | WebScene
+- Create a basic 3D app
+- Core concepts of the API
+- Working with the API (layer properties)
+- Feature highlights & Demos
 
-- Introduction
-- Your first 3D app
-- Working with the API
-- Demos
+<br>
 
 ---
 
 <!-- .slide: data-background="../images/bg-4.png" -->
-
+<!--
 ## <b>Introduction</b>
 
 <br/>
@@ -40,20 +70,20 @@
 <p>Veronika Landers</p>
 
 ---
+-->
 
 <!-- .slide: data-background="../images/bg-2.png" -->
-
+<!--
 ### <b>The ArcGIS Platform</b>
-
 
 <img class="plain" src="./images/platform.png" height=500 background=none>
 
 ---
+-->
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
 ### <b>The ArcGIS <span style="color:#D9BA6F">3D</span> Platform</b>
-
 
 <img class="plain" src="./images/platform-3d.png" height=500 background=none>
 
@@ -61,17 +91,15 @@
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b>Out-of-the-box <span style="color:#D9BA6F">3D</span> Web Apps</b>
+### <b> <span style="color:#D9BA6F">Out-of-the-box</span> 3D Web Apps</b>
 
-
-<img class="plain" src="./images/appsamples.png" height=500 background=none>
+<img class="plain" src="./images/ootb-appsamples.png" height=500 background=none>
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b>Building Apps with the ArcGIS <span style="color:#D9BA6F">3D</span> Platform</b>
-
+### <b><span style="color:#D9BA6F">Building Apps</span> with the ArcGIS 3D Platform</b>
 
 <img class="plain" src="./images/platform-3d-js.png" height=500 background=none>
 
@@ -79,40 +107,39 @@
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b>Custom <span style="color:#D9BA6F">3D</span> Web Apps</b>
+### <b><span style="color:#D9BA6F">Custom 3D</span> Web Apps</b>
 
-
-<img class="plain" src="./images/customsamples.png" height=500 background=none>
+<img class="plain" src="./images/custom-samples.png" height=500 background=none>
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 ### <b>ArcGIS API for JavaScript</b>
 
-<br/>
-<img class="plain" src="./images/js-doc.png" height=500 background=none>
+<span style="font-size: 50%">https://js.arcgis.com</span>
+<br>
+<img class="plain" src="./images/js-api-home.png" height="550" background=none>
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 ### <b>ArcGIS API for JavaScript </b>
 
-  - Visual mapping (2D & 3D), components and widgets
-  - Support for various different layer types (data sources)
-  - Integration with the ArcGIS platform
-    <br/>(security, sign-in, premium services, …)
+- Visual mapping (2D & 3D), components and widgets
+- Support for various different layer types (data sources)
+- Integration with the ArcGIS platform
+<br/>(security, sign-in, premium services, …)
 
 <br/>
 
-<b><span style="color:#D9BA6F">Get it today</span></b>
-
-Find doc & samples to get started at https://developers.arcgis.com/javascript
+<b><span style="color:#D9BA6F">Get it today</span></b><br>
+<span style="font-size: 75%">Find doc & samples to get started at https://developers.arcgis.com/javascript</span>
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b>Desktop <span style="color:#D9BA6F">3D</span> Requirements</b>
+### <b><span style="color:#D9BA6F">Desktop </span>3D Requirements</b>
 
 <br/>
 
@@ -120,26 +147,26 @@ Find doc & samples to get started at https://developers.arcgis.com/javascript
 
 - Latest web browsers with WebGL support
   - Chrome
-  - Edge / Internet Explorer 11\* (\*WebGL not optimized)
   - Firefox
   - Safari
+  - Edge / Internet Explorer 11\* (\*WebGL not optimized)
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
 
-### <b>Mobile <span style="color:#D9BA6F">3D</span> Requirements</b>
+### <b><span style="color:#D9BA6F">Mobile </span>3D Requirements</b>
 
 <br/>
 
-- Mobile support introduced this year!
+- Mobile support introduced last year!
 - Officially supported for the following devices
-  - iOS — iPhone 8, iPad Pro (Safari)
-  - Android — Samsung S8/S9 (Chrome)
-  - Android - Samsung Tab S3 (Chrome)
+  - iOS — iPhone 8/X/XS, iPad Pro (Safari)
+  - Android — Samsung S8/S9/S10, Tab S3/S4 (Chrome)
+<br>
 
-- Other devices *only at your own risk* :)
+<span style="font-size: 75%">Other devices/browser may work, but *only at your own risk* :)</span>
 
 ---
 
