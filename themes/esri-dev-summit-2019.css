@@ -10,16 +10,13 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  /* http://colorzilla.com/gradient-editor/#0A1146+15,0A1146+15,4DADB7+100 */
-  background: #0A1146;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #0A1146 15%, #0A1146 15%, #4DADB7 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #0A1146 15%, #0A1146 15%, #4DADB7 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #0A1146 15%, #0A1146 15%, #4DADB7 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-color: #fff; }
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1c337b+0,0e53c1+33 */
+background: #1c337b; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #1c337b 0%, #0e53c1 33%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #1c337b 0%,#0e53c1 33%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #1c337b 0%,#0e53c1 33%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+}
 
 .reveal {
   font-family: "Lato", sans-serif;
