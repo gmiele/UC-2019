@@ -248,7 +248,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Steps
 
@@ -259,7 +259,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-6.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Creating basic HTML file
 
@@ -308,7 +308,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-6.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Reference the ArcGIS API for JavaScript
 
@@ -357,7 +357,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-6.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Load the module
 
@@ -410,7 +410,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-6.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Instantiate the webscene
 
@@ -465,7 +465,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-6.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Create the view
 
@@ -518,7 +518,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-6.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Your first 3D app!
 
@@ -586,7 +586,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-8.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Layers
 
@@ -610,7 +610,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-8.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Layers
 
@@ -634,7 +634,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Adding a layer
 
@@ -679,7 +679,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Adding a layer
 
@@ -723,7 +723,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-7.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Widgets
 
@@ -737,7 +737,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-7.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Adding a widget
 
@@ -784,7 +784,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-7.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Adding a widget
 
@@ -827,7 +827,7 @@ Clip to your area of interest
 
 ---
 
-<!-- .slide: data-background="../images/bg-7.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Popups
 
@@ -866,7 +866,7 @@ Open it programmatically:
 
 ---
 
-<!-- .slide: data-background="../images/bg-7.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Popup templates
 
@@ -903,7 +903,7 @@ Open it programmatically:
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Architecture
 <br/>
@@ -911,13 +911,15 @@ Open it programmatically:
 
 ---
 
+<!-- .slide: data-background="../images/bg-2.png" -->
+
 ## Architecture
 <br/>
 <img src="../images/concepts-architecture3.png" width="60%" style="border: none; background: none; box-shadow: none"/>
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Working with the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html)
 
@@ -942,7 +944,7 @@ class SceneView {
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## [Camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html)
 
@@ -966,7 +968,7 @@ class Camera {
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## [Camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html)
 
@@ -993,7 +995,7 @@ view.camera = camera;</code></pre>
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## [goTo](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
 
@@ -1030,7 +1032,7 @@ view.goTo({
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## [toMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#toMap)
 
@@ -1060,7 +1062,7 @@ view.on("click", function(event) {
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Working with layers
 
@@ -1083,7 +1085,7 @@ class SceneLayer {
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Filtering
 
@@ -1120,7 +1122,7 @@ sceneLayer.definitionExpression =
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ## Setting layer style
 
@@ -1210,7 +1212,7 @@ ground.navigationConstraint = {
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 ### There is so much more...
 
@@ -1276,7 +1278,7 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Topics
 
@@ -1289,13 +1291,13 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-8.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
 <img class="plain" src="../images/esri-science-logo-white.png" background=none>
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 
 ### Skyscraper explorer
@@ -1304,7 +1306,7 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Hiking App
 
@@ -1312,7 +1314,7 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### C-Through
 
@@ -1320,7 +1322,7 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Satellite map
 
@@ -1328,7 +1330,7 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-5.png" -->
+<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Landsat viewer
 
