@@ -222,6 +222,7 @@ Visualize data on a full globe
 Choose one of two geographic coordinate systems
   - WebMercator (wkid: 3857) - ideal to use Esri provided cached data
   - WGS84 (wkid: 4326)
+  - CCGS 2000 (wkid: 9999999)
 
 ---
 
@@ -254,9 +255,22 @@ Clip to your area of interest
 
 - Vehicle for cross platform 3D capabilities
 - Collection of layers, environment settings, slides
-- Read and write Web Scenes across the ArcGIS platform
+- Defines the content of a 3D scene
+- Read and write Web Scenes across the ArcGIS platform<br>
+(ArcGIS Pro, Web Apps, ArcGIS Runtime)
+- Stored in ArcGIS Online or Enterprise as `portal-item`
+- Serialized as JSON
+<p></p>
 
 <img class="plain" src="./images/platform-webscene.png" background=none>
+
+---
+
+<!-- .slide: data-background="../images/bg-2.png" -->
+
+### <b>Web Scenes Specification</b>
+
+<img class="plain" src="./images/webscene-spec.png" height=500 background=none>
 
 ---
 
