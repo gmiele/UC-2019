@@ -3,7 +3,7 @@
 
 ## Building <span style="color:#D9BA6F">3D</span> Apps <br/> with ArcGIS API for JavaScript
 
-<p>Veronika Landers - Yannik Messerli - Johannes Schmid</p>
+<p>Gianluca Miele - Javier Gutierrez</p>
 
 ---
 
