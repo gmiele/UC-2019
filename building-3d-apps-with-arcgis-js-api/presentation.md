@@ -8,9 +8,9 @@
   Javier Gutierrez, Esri R&amp;D Center Z&uuml;rich<br/>
   Gianluca Miele, Esri R&amp;D Center Z&uuml;rich
 </p>
-<p>
-  <small>Live version of this presentation:</small>
-</p>
+<p><small>
+Live version of this presentation:<br>https://gmiele.github.io/UC-2019/building-3d-apps-with-arcgis-js-api
+</small></p>
 
 ---
 
@@ -58,26 +58,6 @@ using the ArcGIS API for JavaScript
 <br>
 
 ---
-
-<!-- .slide: data-background="../images/bg-4.png" -->
-<!--
-## <b>Introduction</b>
-
-<br/>
-
-<p>Veronika Landers</p>
-
----
--->
-
-<!--
-### <b>The ArcGIS Platform</b>
-
-<img class="plain" src="./images/platform.png" height=500 background=none>
-
----
--->
-
 
 ### <b>The ArcGIS <span style="color:#D9BA6F">3D</span> Platform</b>
 
@@ -151,16 +131,16 @@ using the ArcGIS API for JavaScript
 
 - Mobile support introduced last year!
 - Officially supported for the following devices
-  - iOS — iPhone 8/X/XS, iPad Pro (Safari)
+  - iOS — iPhone 8/XS, iPad Pro (Safari)
   - Android — Samsung S8/S9/S10, Tab S3/S4 (Chrome)
 <br>
 
-<span style="font-size: 75%">Other devices/browser may work, but *only at your own risk* :)</span>
+<span style="font-size: 75%">*Other devices/browser may work, but only at your own risk* :)</span>
 
 ---
 
 
-### <b>Content for your apps</b>
+### <b>Content for your apps -> UPDATE</b>
 
 <img class="plain" src="./images/publish.png" height=600 background=none>
 
@@ -205,7 +185,7 @@ Visualize data on a full globe
 Choose one of two geographic coordinate systems
   - WebMercator (wkid: 3857) - ideal to use Esri provided cached data
   - WGS84 (wkid: 4326)
-  - CCGS 2000 (wkid: 9999999)
+  - CGCS2000 (wkid: 4490) *- China Geodetic coordiante System 2000*
 
 ---
 
@@ -234,23 +214,24 @@ Clip to your area of interest
 ### <b>Web Scenes Concept</b>
 
 - Vehicle for cross platform 3D capabilities
-- Collection of layers, environment settings, slides
-- Defines the content of a 3D scene
-- Read and write Web Scenes across the ArcGIS platform<br>
-(ArcGIS Pro, Web Apps, ArcGIS Runtime)
+  - Collection of layers, environment settings, slides
+  - Defines the content of a 3D scene
 - Stored in ArcGIS Online or Enterprise as `portal-item`
-- Serialized as JSON
+  - Read and write Web Scenes across the ArcGIS platform<br>
+(ArcGIS Pro, Web Apps, ArcGIS Runtime)
+  - Serialized as JSON
 <p></p>
 
-<img class="plain" src="./images/platform-webscene.png" background=none>
+<img class="plain" style="margin-top: 50px" height=185px src="./images/platform-webscene.png" background=none>
 
 ---
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b>Web Scenes Specification</b>
+### Web scene specification
 
-<img class="plain" src="./images/webscene-spec.png" height=500 background=none>
+<img class="plain" src="./images/webscene-spec.png" height=450 background=none><br>
+<span style="font-size: 80%; margin-top: 0px">https://developers.arcgis.com/web-scene-specification</span>
 
 ---
 
@@ -264,7 +245,7 @@ SDCC - Room 15 B
 
 <!-- .slide: data-background="../images/bg-4.png" -->
 
-## <b>-Create a basic 3D app</b>
+## <b>Create a basic 3D app</b>
 
 <br/>
 
@@ -276,15 +257,15 @@ SDCC - Room 15 B
 
 ### Steps
 
-1. Loading the webscene
-2. Add a layer
-3. Add a widget
-4. Configure popups
+1. Create basic HTML
+2. Load API
+3. Add Web Scene
+4. Go!
 
 ---
 
 
-## Creating basic HTML file
+## Creating basic HTML
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="lang-html">
@@ -298,7 +279,7 @@ SDCC - Room 15 B
       &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="lang-html">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
+      &lt;title&gt;My first 3D web app&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
@@ -332,7 +313,7 @@ SDCC - Room 15 B
 ---
 
 
-## Reference the ArcGIS API for JavaScript
+## Load API
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -346,7 +327,7 @@ SDCC - Room 15 B
       &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
+      &lt;title&gt;My first 3D web app&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
@@ -380,7 +361,7 @@ SDCC - Room 15 B
 ---
 
 
-## Load the module
+## Load modules...
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -390,11 +371,11 @@ SDCC - Room 15 B
       &lt;meta charset=&quot;utf-8&quot;&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.8/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.8/&quot;&gt;&lt;/script&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.12/esri/css/main.css&quot;&gt;
+      &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
+      &lt;title&gt;My first 3D web app&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
@@ -432,7 +413,7 @@ SDCC - Room 15 B
 ---
 
 
-## Instantiate the webscene
+## ... and the Webscene
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -442,11 +423,11 @@ SDCC - Room 15 B
       &lt;meta charset=&quot;utf-8&quot;&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.8/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.8/&quot;&gt;&lt;/script&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.12/esri/css/main.css&quot;&gt;
+      &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
+      &lt;title&gt;My first 3D web app&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
@@ -496,11 +477,11 @@ SDCC - Room 15 B
       &lt;meta charset=&quot;utf-8&quot;&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.8/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.8/&quot;&gt;&lt;/script&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.12/esri/css/main.css&quot;&gt;
+      &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
+      &lt;title&gt;My first 3D web app&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
@@ -538,7 +519,7 @@ SDCC - Room 15 B
 ---
 
 
-## Your first 3D app!
+## Your 3D app is ready to go
 
 <div class="two-columns">
   <div class="left-column">
@@ -551,11 +532,11 @@ SDCC - Room 15 B
       &lt;meta charset=&quot;utf-8&quot;&gt;
     </code>
     <code style="margin-bottom: -30px;" class="lang-html">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.8/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.8/&quot;&gt;&lt;/script&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.12/esri/css/main.css&quot;&gt;
+      &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="lang-html">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
+      &lt;title&gt;My first 3D web app&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
@@ -656,7 +637,7 @@ SDCC - Room 15 B
 ---
 
 
-## Adding a layer
+## Adding a `FeatureLayer`
 
 <div class="code-snippet" style="font-size: 140%; max-width: 600px; float: none; margin: auto;">
     <pre><code style="margin-bottom: -40px;" class="grey">
@@ -1197,46 +1178,30 @@ ground.navigationConstraint = {
 
 ---
 
-
-### There is so much more...
-
-[https://developers.arcgis.com/javascript/](https://developers.arcgis.com/javascript/)
-
-<img src="../images/api-doc.png" height="500"/>
-
----
-
 <!-- .slide: data-background="../images/bg-4.png" -->
-
-<h3>ArcGIS API for JavaScript: An Introduction</h3>
-Tuesday, 4:00 pm - 5:00 pm<br/>
-Room 30E<br/>
+## More renderers and visualizations
+<br>
+<b>3D Visualization with the ArcGIS API for JavaScript</b><br>
+Wednesday (yesterday), 2:30 pm - 3:30 pm<br/>
+SDCC - Room 15 A<br/>
 <br/>
-<br/>
 
-<h3 class="fragment" data-fragment-index="1">ArcGIS API for JavaScript: Best Practices for Building Apps</h3>
+<!--<h3 class="fragment" data-fragment-index="1">ArcGIS API for JavaScript: Best Practices for Building Apps</h3>
 <span class="fragment" data-fragment-index="1">Wednesday, 2:30 pm - 3:30 pm<br/>
 Room 31A<br/>
 </span>
+-->
 
 ---
 
 <!-- .slide: data-background="../images/bg-1.png" -->
 
-## <b>Demos</b> 
+## <b>Feature Highlights & Demos</b> 
 
-<br/>
-
-<div style="margin-top: -70px; font-size: 80%; font-style: italic;">of 3D applications</div>
-
-<br/>
-
-<p>Veronika Landers - Johannes Schmid - Yannik Messerli</p>
-
----
+<!--<div style="margin-top: -70px; font-size: 80%; font-style: italic;">of 3D applications</div>-->
 
 <!-- .slide: data-background="../images/bg-4.png" -->
-
+<!--
 ### Related sessions
 <br/>
 
@@ -1253,42 +1218,23 @@ Thursday, 10:00 am - 11:00 am<br/>
 Room 33C
 
 ---
+-->
 
-
-### Please Take Our Survey on the App
-
-<img class="plain" src="./images/survey.png" background=none>
-
----
 
 <!-- .slide: data-background="../images/bg-4.png" -->
 
-### Topics
-
-
-- [Skyscraper explorer](https://esri.github.io/Manhattan-skyscraper-explorer/)
-- [Hiking App](https://ralucanicola.github.io/hiking-app/)
-- [C-Through](https://esri.github.io/c-through/)
-- [Satellite map](https://richiecarmichael.github.io/sat/index.html)
-- [Landsat viewer](https://richiecarmichael.github.io/landsat-viewer/index.html)
+- [Client side filters](https://esri.github.io/Manhattan-skyscraper-explorer/)
+- [Drawing](https://ralucanicola.github.io/hiking-app/)
+- [BIM data & Slice tool](https://esri.github.io/c-through/)
 
 ---
 
-
-<img class="plain" src="../images/esri-science-logo-white.png" background=none>
-
----
-
-<!-- .slide: data-background="../images/bg-4.png" -->
-
-
+<!--
 ### Skyscraper explorer
 
 <iframe id="scene-view-map-view" data-src="https://esri.github.io/Manhattan-skyscraper-explorer/"></iframe>
 
 ---
-
-<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Hiking App
 
@@ -1296,15 +1242,11 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
-
 ### C-Through
 
 <iframe id="scene-view-map-view" data-src="https://esri.github.io/c-through/"></iframe>
 
 ---
-
-<!-- .slide: data-background="../images/bg-4.png" -->
 
 ### Satellite map
 
@@ -1312,8 +1254,22 @@ Room 33C
 
 ---
 
-<!-- .slide: data-background="../images/bg-4.png" -->
-
 ### Landsat viewer
 
 <iframe id="scene-view-map-view" data-src="https://richiecarmichael.github.io/landsat-viewer/index.html"></iframe>
+
+---
+-->
+
+## One more...
+
+
+### Please Share Your Feedback using the Esri events App
+
+<img class="plain" src="..\images\share-feeback-survey.png" background=none>
+
+---
+
+<!--### Thanks for attending-->
+
+<img class="plain" src="..\images\esri-science-logo-white.png" background=none>
