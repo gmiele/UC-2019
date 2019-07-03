@@ -264,15 +264,11 @@ SDCC - Room 15 B
 
 <!-- .slide: data-background="../images/bg-4.png" -->
 
-## <b>Your first 3D App</b>
+## <b>-Create a basic 3D app</b>
 
 <br/>
 
-<div style="margin-top: -70px; font-size: 80%; font-style: italic;">with the ArcGIS API for JavaScript</div>
-
-<br/>
-
-<p>Yannik Messerli</p>
+<div style="margin-top: -50px; font-size: 80%; font-style: italic;">with the ArcGIS API for JavaScript</div>
 
 ---
 
@@ -281,9 +277,9 @@ SDCC - Room 15 B
 ### Steps
 
 1. Loading the webscene
-1. Add a layer
-1. Add a widget
-1. Configure popups
+2. Add a layer
+3. Add a widget
+4. Configure popups
 
 ---
 
@@ -298,8 +294,8 @@ SDCC - Room 15 B
       &lt;meta charset=&quot;utf-8&quot;&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.8/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.8/&quot;&gt;&lt;/script&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.12/esri/css/main.css&quot;&gt;
+      &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="lang-html">
       &lt;title&gt;Create a 3D map&lt;/title&gt;
@@ -330,7 +326,7 @@ SDCC - Room 15 B
     &lt;/body&gt;
     &lt;/html&gt;
     </code></pre>
-    </div>
+</div>
 
 
 ---
@@ -346,8 +342,8 @@ SDCC - Room 15 B
       &lt;meta charset=&quot;utf-8&quot;&gt;
     </code>
     <code style="margin-bottom: -30px;" class="lang-html">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.8/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.8/&quot;&gt;&lt;/script&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.12/esri/css/main.css&quot;&gt;
+      &lt;script src=&quot;//js.arcgis.com/4.12/&quot;&gt;&lt;/script&gt;
     </code>
     <code style="margin-bottom: -30px;" class="grey">
       &lt;title&gt;Create a 3D map&lt;/title&gt;
@@ -600,6 +596,11 @@ SDCC - Room 15 B
 
 <!-- .slide: data-background="../images/bg-4.png" -->
 
+## <b>Core concepts of the API</b>
+
+---
+
+
 ## Details about the `Webscene` class
 
 - `Layers`, `Presentation`, ...
@@ -744,7 +745,7 @@ SDCC - Room 15 B
 
 ## Widgets
 
-<div style="max-width:70%;margin: auto; margin-bottom: 50px;">Widgets are UI components that add functionalities to your scene.  The API provides ready-to-use widgets, for example:</div>
+<div style="max-width:70%;margin: auto; margin-bottom: 50px;">Widgets are UI components that add functionalities to your scene. The API provides ready-to-use widgets, for example:</div>
 
 - `Legend`
 - `LayerList`
@@ -902,17 +903,6 @@ Open it programmatically:
     <iframe id="scene-view-map-view" data-src="./snippets/setup-snippet-4.html"></iframe>
   </div>
 </div>
-
----
-
-<!-- .slide: data-background="../images/bg-4.png" -->
-
-## <b>Working with the API</b>
-
-
-<br/>
-
-<p>Johannes Schmid</p>
 
 ---
 
