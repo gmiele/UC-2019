@@ -245,11 +245,11 @@ SDCC - Room 15 B
 
 <!-- .slide: data-background="../images/bg-4.png" -->
 
-## <b>Create a basic 3D app</b>
+## <b>Create a 3D App</b>
 
 <br/>
 
-<div style="margin-top: -50px; font-size: 80%; font-style: italic;">with the ArcGIS API for JavaScript</div>
+<!--<div style="margin-top: -50px; font-size: 80%; font-style: italic;">with the ArcGIS API for JavaScript</div>-->
 
 ---
 
@@ -292,7 +292,7 @@ SDCC - Room 15 B
         ], function(WebScene, SceneView) {
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
           var view = new SceneView({
@@ -340,7 +340,7 @@ SDCC - Room 15 B
         ], function(WebScene, SceneView) {
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
           var view = new SceneView({
@@ -390,7 +390,7 @@ SDCC - Room 15 B
     <code style="margin-bottom: -30px;" class="grey">
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
           var view = new SceneView({
@@ -442,7 +442,7 @@ SDCC - Room 15 B
     <code style="margin-bottom: -30px;" class="lang-js">
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
     </code>
@@ -461,7 +461,7 @@ SDCC - Room 15 B
     </code></pre>
 </div>
 <p class="fragment" data-fragment-index="1" style="position: absolute; top: 100px; max-width: 800px; margin-left: -50%; left: 75%;">
-  <img src="./images/portalitem.png" alt="">
+  <img src="./images/webscene-portalitem.png" alt="">
 </p>
 
 ---
@@ -496,7 +496,7 @@ SDCC - Room 15 B
     <code style="margin-bottom: -30px;" class="grey">
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
     </code>
@@ -549,7 +549,7 @@ SDCC - Room 15 B
         ], function(WebScene, SceneView) {
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
           var view = new SceneView({
@@ -657,7 +657,7 @@ SDCC - Room 15 B
     <code style="margin-bottom: -40px;" class="grey">
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
           var view = new SceneView({
@@ -696,7 +696,7 @@ SDCC - Room 15 B
         ], function(WebScene, SceneView, FeatureLayer) {
           var scene = new WebScene({
             portalItem: {
-              id: "e5dab9bfc78a46d08276b185026fc20a"
+              id: "69af87076d884670995217536d60f150"
             }
           });
           var view = new SceneView({
@@ -1224,44 +1224,49 @@ Room 33C
 <!-- .slide: data-background="../images/bg-4.png" -->
 
 - [Client side filters](https://esri.github.io/Manhattan-skyscraper-explorer/)
-- [Drawing](https://ralucanicola.github.io/hiking-app/)
+- [Draw your neighborhood](https://ralucanicola.github.io/hiking-app/)
 - [BIM data & Slice tool](https://esri.github.io/c-through/)
 
 ---
 
-<!--
-### Skyscraper explorer
 
-<iframe id="scene-view-map-view" data-src="https://esri.github.io/Manhattan-skyscraper-explorer/"></iframe>
+### Client side filters
 
----
-
-### Hiking App
-
-<iframe id="scene-view-map-view" data-src="https://ralucanicola.github.io/hiking-app/"></iframe>
+<iframe id="scene-view-map-view" data-src="https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html"></iframe>
 
 ---
 
-### C-Through
+### Draw and create your next neighborhood
 
-<iframe id="scene-view-map-view" data-src="https://esri.github.io/c-through/"></iframe>
-
----
-
-### Satellite map
-
-<iframe id="scene-view-map-view" data-src="https://richiecarmichael.github.io/sat/index.html"></iframe>
+<iframe id="scene-view-map-view" data-src="https://esri.github.io/participatory-planning/"></iframe>
 
 ---
 
-### Landsat viewer
+### BIM data
 
-<iframe id="scene-view-map-view" data-src="https://richiecarmichael.github.io/landsat-viewer/index.html"></iframe>
+<img src="./images/turanga.jpg" width="100%"/>
 
 ---
--->
 
-## One more...
+### Explore a public building
+
+<iframe id="scene-view-map-view" data-src="https://zrh-devweb.esri.com/yann9059/bsl-demo-app/"></iframe>
+
+---
+
+<iframe id="scene-view-map-view" data-src="http://zurich.maps.arcgis.com/home/webscene/viewer.html?webscene=543648a92446497db8a92c06ce1ad0b1"></iframe>
+
+---
+
+## A few more...
+
+---
+
+### Water
+
+<iframe id="scene-view-map-view" data-src="https://www.arcgis.com/home/webscene/viewer.html?webscene=93464f88785345199b935b4d71187b2b&viewpoint=cam:13.45161337,52.51356164,3222.366;286.579,40.75"></iframe>
+
+---
 
 
 ### Please Share Your Feedback using the Esri events App
@@ -1269,6 +1274,7 @@ Room 33C
 <img class="plain" src="..\images\share-feeback-survey.png" background=none>
 
 ---
+
 
 <!--### Thanks for attending-->
 
