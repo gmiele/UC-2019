@@ -31,7 +31,7 @@ using the ArcGIS API for JavaScript
 
 ### <b> 3D GIS <span style="color:#D9BA6F">across industries</span></b>
 
-<img class="plain" src="./images/3d-gis-industries.png" width="80%" style="border: none; background: none; box-shadow: none"/>
+<img class="plain" src="./images/3d-gis-industries-2019.png" width="80%" style="border: none; background: none; box-shadow: none"/>
 
 
 <!--
@@ -139,34 +139,30 @@ using the ArcGIS API for JavaScript
 ---
 
 
-### Content for your apps
+## Data considerations
 
-<img class="plain" src="./images/publish.png" height=600 background=none>
+- 2D data
+  - Features
+  - Maps
+  - Tiles (raster, vector)
+  - Elevation
+
+- 3D data as Feature layers
+
+- 3D data as Scene layers (open i3s format)
+  - 3D Objects
+  - Integrated Meshes
+  - Point Clouds
+  - Points (from point features)
+  - Building Scene Layer
 
 ---
 
-<!--
-## Data types and layers
+### Content for your apps
 
-|              |  |
-|--------------|--|
-| `FeatureLayer` | <small>2D & 3D</small> |
-| `CSVLayer` | <small>2D & 3D</small> |
-| `StreamLayer` | <small>2D & 3D</small> |
-| `MapImageLayer` | <small>2D & 3D</small> |
-| `ImageryLayer` | <small>2D & 3D</small> |
-| `WMSLayer` | <small>2D & 3D</small> |
-| `OpenStreetMapLayer` | <small>2D & 3D</small> |
-| `TileLayer` | <small>2D & 3D</small> |
-| `WebTileLayer` | <small>2D & 3D</small> |
-| `WMTSLayer` | <small>2D & 3D</small> |
-| `VectorTileLayer` | <small>2D & 3D</small> |
-| `ElevationLayer` | <small> 3D only</small> |
-| `SceneLayer` | <small> 3D only</small> |
-| `IntegratedMeshLayer` | <small> 3D only</small> |
-| `PointCloudLayer` | <small> 3D only</small> |
+<img class="plain" src="./images/content-for-apps.png" background=none>
 
--->
+---
 
 
 ### <b>Publish a layer in ArcGIS Pro</b>
@@ -632,6 +628,7 @@ SDCC - Room 15 B
 | `SceneLayer` | <small> 3D only</small> |
 | `IntegratedMeshLayer` | <small> 3D only</small> |
 | `PointCloudLayer` | <small> 3D only</small> |
+| `BuildingSceneLayer` | <small> 3D only</small> |
 
 ---
 
