@@ -158,6 +158,7 @@ using the ArcGIS API for JavaScript
 
 ---
 
+
 ### Content for your apps
 
 <img class="plain" src="./images/content-for-apps.png" background=none>
