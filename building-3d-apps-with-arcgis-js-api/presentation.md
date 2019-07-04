@@ -1,16 +1,15 @@
 
 <!-- .slide: data-background="../images/bg-1.png" -->
 
-## Building <span style="color:#D9BA6F">3D</span> Apps <br/> with ArcGIS API for JavaScript
+## <span style="color:#D9BA6F">Building 3D Apps </span><br/>with ArcGIS API for JavaScript
 
 <!--<p>Gianluca Miele - Javier Gutierrez</p>-->
-<p style="font-size: 75%"><br/>
+<p style="font-size: 80%"><br/>
   Javier Gutierrez, Esri R&amp;D Center Z&uuml;rich<br/>
   Gianluca Miele, Esri R&amp;D Center Z&uuml;rich
 </p>
-<p><small>
-Live version of this presentation:<br>https://gmiele.github.io/UC-2019/building-3d-apps-with-arcgis-js-api
-</small></p>
+
+<span style="font-size: 70%">[Live version of this presentation - https://gmiele.github.io/UC-2019/building-3d-apps-with-arcgis-js-api](https://gmiele.github.io/UC-2019/building-3d-apps-with-arcgis-js-api)</span>
 
 ---
 
@@ -52,41 +51,41 @@ using the ArcGIS API for JavaScript
 - 3D Platform | Data | API | WebScene
 - Create a basic 3D app
 - Core concepts of the API
-- Working with the API (layer properties)
+- Working with the API
 - Feature highlights & Demos
 
 <br>
 
 ---
 
-### <b>The ArcGIS <span style="color:#D9BA6F">3D</span> Platform</b>
+### The ArcGIS <span style="color:#D9BA6F">3D</span> Platform
 
 <img class="plain" src="./images/platform-3d.png" height=500 background=none>
 
 ---
 
 
-### <b> <span style="color:#D9BA6F">Out-of-the-box</span> 3D Web Apps</b>
+### <span style="color:#D9BA6F">Out-of-the-box</span> 3D Web Apps
 
 <img class="plain" src="./images/ootb-appsamples.png" height=500 background=none>
 
 ---
 
 
-### <b><span style="color:#D9BA6F">Building Apps</span> with the ArcGIS 3D Platform</b>
+### <span style="color:#D9BA6F">Building Apps</span> with the ArcGIS 3D Platform
 
 <img class="plain" src="./images/platform-3d-js.png" height=500 background=none>
 
 ---
 
 
-### <b><span style="color:#D9BA6F">Custom 3D</span> Web Apps</b>
+### <span style="color:#D9BA6F">Custom 3D</span> Web Apps
 
 <img class="plain" src="./images/custom-samples.png" height=500 background=none>
 
 ---
 
-### <b>ArcGIS API for JavaScript</b>
+### ArcGIS API for JavaScript
 
 <span style="font-size: 50%">https://js.arcgis.com</span>
 <br>
@@ -94,7 +93,7 @@ using the ArcGIS API for JavaScript
 
 ---
 
-### <b>ArcGIS API for JavaScript </b>
+### <b>ArcGIS API for JavaScript</b>
 
 - Visual mapping (2D & 3D), components and widgets
 - Support for various different layer types (data sources)
@@ -109,7 +108,7 @@ using the ArcGIS API for JavaScript
 ---
 
 
-### <b><span style="color:#D9BA6F">Desktop </span>3D Requirements</b>
+### <span style="color:#D9BA6F">Desktop </span>3D Requirements
 
 <br/>
 
@@ -125,7 +124,7 @@ using the ArcGIS API for JavaScript
 
 
 
-### <b><span style="color:#D9BA6F">Mobile </span>3D Requirements</b>
+### <span style="color:#D9BA6F">Mobile </span>3D Requirements
 
 <br/>
 
@@ -140,11 +139,34 @@ using the ArcGIS API for JavaScript
 ---
 
 
-### <b>Content for your apps -> UPDATE</b>
+### Content for your apps
 
 <img class="plain" src="./images/publish.png" height=600 background=none>
 
 ---
+
+<!--
+## Data types and layers
+
+|              |  |
+|--------------|--|
+| `FeatureLayer` | <small>2D & 3D</small> |
+| `CSVLayer` | <small>2D & 3D</small> |
+| `StreamLayer` | <small>2D & 3D</small> |
+| `MapImageLayer` | <small>2D & 3D</small> |
+| `ImageryLayer` | <small>2D & 3D</small> |
+| `WMSLayer` | <small>2D & 3D</small> |
+| `OpenStreetMapLayer` | <small>2D & 3D</small> |
+| `TileLayer` | <small>2D & 3D</small> |
+| `WebTileLayer` | <small>2D & 3D</small> |
+| `WMTSLayer` | <small>2D & 3D</small> |
+| `VectorTileLayer` | <small>2D & 3D</small> |
+| `ElevationLayer` | <small> 3D only</small> |
+| `SceneLayer` | <small> 3D only</small> |
+| `IntegratedMeshLayer` | <small> 3D only</small> |
+| `PointCloudLayer` | <small> 3D only</small> |
+
+-->
 
 
 ### <b>Publish a layer in ArcGIS Pro</b>
@@ -1179,12 +1201,11 @@ ground.navigationConstraint = {
 ---
 
 <!-- .slide: data-background="../images/bg-4.png" -->
-## More renderers and visualizations
-<br>
-<b>3D Visualization with the ArcGIS API for JavaScript</b><br>
+### 3D Visualization with the ArcGIS API for JavaScript<br>
 Wednesday (yesterday), 2:30 pm - 3:30 pm<br/>
-SDCC - Room 15 A<br/>
-<br/>
+SDCC - Room 15 A
+<br/><br/>
+<small>related session</small>
 
 <!--<h3 class="fragment" data-fragment-index="1">ArcGIS API for JavaScript: Best Practices for Building Apps</h3>
 <span class="fragment" data-fragment-index="1">Wednesday, 2:30 pm - 3:30 pm<br/>
@@ -1198,78 +1219,53 @@ Room 31A<br/>
 
 ## <b>Feature Highlights & Demos</b> 
 
-<!--<div style="margin-top: -70px; font-size: 80%; font-style: italic;">of 3D applications</div>-->
-
-<!-- .slide: data-background="../images/bg-4.png" -->
-<!--
-### Related sessions
-<br/>
-
-**ArcGIS API for JavaScript: An Introduction**<br/>
-Tuesday, 4:00 pm - 5:00 pm<br/>
-Room 30E<br/>
-
-**ArcGIS API for JavaScript: Best Practices for Building Apps**<br/>
-Wednesday, 2:30 pm - 3:30 pm<br/>
-Room 31A<br/>
-
-**ArcGIS API for JavaScript: 3D Visualization**<br/>
-Thursday, 10:00 am - 11:00 am<br/>
-Room 33C
-
----
--->
-
-
-<!-- .slide: data-background="../images/bg-4.png" -->
-
-- [Client side filters](https://esri.github.io/Manhattan-skyscraper-explorer/)
-- [Draw your neighborhood](https://ralucanicola.github.io/hiking-app/)
-- [BIM data & Slice tool](https://esri.github.io/c-through/)
+- [Client side filters](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html)
+- [Participatory Planning](https://github.com/Esri/participatory-planning)
+- [Building Viewer](https://github.com/Esri/building-viewer)
 
 ---
 
 
 ### Client side filters
 
-<iframe id="scene-view-map-view" data-src="https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html"></iframe>
+<iframe id="scene-view-map-view" data-src="./snippets/scenelayerview-query-stats.html"></iframe>
 
 ---
 
-### Draw and create your next neighborhood
+### Participatory Planning
+<!--#### Draw and create your next neighborhood-->
 
 <iframe id="scene-view-map-view" data-src="https://esri.github.io/participatory-planning/"></iframe>
 
 ---
 
-### BIM data
+### Building Viewer
+<!--#### Make your BIM data accessible-->
 
-<img src="./images/turanga.jpg" width="100%"/>
-
----
-
-### Explore a public building
+<!--<img src="./images/turanga.jpg" width="100%"/>-->
 
 <iframe id="scene-view-map-view" data-src="https://zrh-devweb.esri.com/yann9059/bsl-demo-app/"></iframe>
 
 ---
 
-<iframe id="scene-view-map-view" data-src="http://zurich.maps.arcgis.com/home/webscene/viewer.html?webscene=543648a92446497db8a92c06ce1ad0b1"></iframe>
+### Do more with Buildings [Sample](https://developers.arcgis.com/javascript/latest/sample-code/building-scene-layer-slice/index.html)
+
+<iframe id="scene-view-map-view" data-src="./snippets/bsl-slice-example.html"></iframe>
 
 ---
 
-## A few more...
+### There is one more...
 
 ---
 
 ### Water
 
-<iframe id="scene-view-map-view" data-src="https://www.arcgis.com/home/webscene/viewer.html?webscene=93464f88785345199b935b4d71187b2b&viewpoint=cam:13.45161337,52.51356164,3222.366;286.579,40.75"></iframe>
+<iframe id="scene-view-map-view" height=550 data-src="https://arcg.is/1i0far"></iframe>
 
 ---
 
 
-### Please Share Your Feedback using the Esri events App
+### Please Share Your Feedback using the <span style="color:#D9BA6F">Esri events App</span>
 
 <img class="plain" src="..\images\share-feeback-survey.png" background=none>
 
