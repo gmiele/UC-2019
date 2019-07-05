@@ -87,7 +87,7 @@ using the ArcGIS API for JavaScript
 
 ### ArcGIS API for JavaScript
 
-<span style="font-size: 50%">https://js.arcgis.com</span>
+<span style="font-size: 75%">https://js.arcgis.com</span>
 <br>
 <img class="plain" src="./images/js-api-home.png" height="550" background=none>
 
@@ -139,7 +139,7 @@ using the ArcGIS API for JavaScript
 ---
 
 
-## Data considerations
+### <span style="color:#D9BA6F">Data</span> considerations
 
 - 2D data
   - Features
@@ -166,21 +166,21 @@ using the ArcGIS API for JavaScript
 ---
 
 
-### <b>Publish a layer in ArcGIS Pro</b>
+### Publish a layer in ArcGIS Pro
 
-<img class="plain" src="./images/publish-pro-layer.png" height=700 background=none>
-
----
-
-
-### <b>Publish a web scene in ArcGIS Pro</b>
-
-<img class="plain" src="./images/publish-pro.png" height=700 background=none>
+<img class="plain" src="./images/publish-pro-layer.png" height=600 background=none>
 
 ---
 
 
-### <b>Coordinate System Support for Scenes</b>
+### Publish a web scene in ArcGIS Pro
+
+<img class="plain" src="./images/publish-pro.png" height=600 background=none>
+
+---
+
+
+### Coordinate System Support for Scenes
 
 - Each scene has its coordinate system defined.
 - Cached data needs to be provided in the defined system.
@@ -199,9 +199,9 @@ Visualize data on a full globe
 ---
 
 
-### <b>Global scenes</b>
+### Global scenes
 
-Choose one of two geographic coordinate systems
+Choose one of the geographic coordinate systems:
   - WebMercator (wkid: 3857) - ideal to use Esri provided cached data
   - WGS84 (wkid: 4326)
   - CGCS2000 (wkid: 4490) *- China Geodetic coordiante System 2000*
@@ -219,7 +219,7 @@ Visualize data in a local planar way
 ---
 
 
-### <b>Local scenes</b>
+### Local scenes
 
 Choose one of the following options
 - WebMercator (wkid: 3857)
@@ -1219,7 +1219,8 @@ Room 31A<br/>
 
 - [Client side filters](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html)
 - [Participatory Planning](https://github.com/Esri/participatory-planning)
-- [Building Viewer](https://github.com/Esri/building-viewer)
+<!-- [Building Viewer](https://github.com/Esri/building-viewer)-->
+- [Building Viewer](https://yannikmesserli.github.io/esri-building-viewer/dist)
 
 ---
 
@@ -1233,7 +1234,7 @@ Room 31A<br/>
 ### Participatory Planning
 <!--#### Draw and create your next neighborhood-->
 
-<iframe id="scene-view-map-view" data-src="https://esri.github.io/participatory-planning/"></iframe>
+<iframe id="scene-view-map-view" data-src="https://esri.github.io/participatory-planning"></iframe>
 
 ---
 
@@ -1242,7 +1243,7 @@ Room 31A<br/>
 
 <!--<img src="./images/turanga.jpg" width="100%"/>-->
 
-<iframe id="scene-view-map-view" data-src="https://zrh-devweb.esri.com/yann9059/bsl-demo-app/"></iframe>
+<iframe id="scene-view-map-view" data-src="https://yannikmesserli.github.io/esri-building-viewer/dist"></iframe>
 
 ---
 
