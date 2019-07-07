@@ -110,25 +110,20 @@ using the ArcGIS API for JavaScript
 
 ### <span style="color:#D9BA6F">Desktop </span>3D Requirements
 
-<br/>
-
 - Modern hardware, especially Graphics Card
-
 - Latest web browsers with WebGL support
   - Chrome
   - Firefox
   - Safari
   - Edge / Internet Explorer 11\* (\*WebGL not optimized)
 
----
 
+---
 
 
 ### <span style="color:#D9BA6F">Mobile </span>3D Requirements
 
-<br/>
-
-- Mobile support introduced last year!
+- Mobile support introduced last year
 - Officially supported for the following devices
   - iOS — iPhone 8/XS, iPad Pro (Safari)
   - Android — Samsung S8/S9/S10, Tab S3/S4 (Chrome)
@@ -141,15 +136,15 @@ using the ArcGIS API for JavaScript
 
 ### <span style="color:#D9BA6F">Data</span> considerations
 
-- 2D data
+- <span style="color:#D9BA6F"><b>2D data<b></span>
   - Features
   - Maps
   - Tiles (raster, vector)
   - Elevation
+<br>
 
-- 3D data as Feature layers
-
-- 3D data as Scene layers (open i3s format)
+- <span style="color:#D9BA6F"><b>3D data as Feature layers</b></span>
+- <span style="color:#D9BA6F"><b>3D data as Scene layers (open i3s format)</b></span>
   - 3D Objects
   - Integrated Meshes
   - Point Clouds
@@ -159,7 +154,7 @@ using the ArcGIS API for JavaScript
 ---
 
 
-### Content for your apps
+### <span style="color:#D9BA6F">Content </span>for your apps
 
 <img class="plain" src="./images/content-for-apps.png" background=none>
 
@@ -182,10 +177,24 @@ using the ArcGIS API for JavaScript
 
 ### Coordinate System Support for Scenes
 
+|              |     |              |
+|--------------|-----|--------------|
+| One Scene | -> | One coordiante system |
+| Cached data | -> | must match defined system |
+| Feature & dynamic data | -> | projected on-the-fly |
+| Coordinate systems | -> | type of scenes & capabilities |
+
+<!--
+- One scene -> One coordiante system
+- Cached data -> must match defined system
+- Feature & dynamic data -> projected on-the-fly
+- Coordiante systems -> type of scenes & capabilities
+
 - Each scene has its coordinate system defined.
 - Cached data needs to be provided in the defined system.
 - Feature and dynamic data is projected on the fly.
 - Coordinate systems define the type of scenes and its capabilities.
+-->
 
 ---
 
@@ -204,7 +213,7 @@ Visualize data on a full globe
 Choose one of the geographic coordinate systems:
   - WebMercator (wkid: 3857) - ideal to use Esri provided cached data
   - WGS84 (wkid: 4326)
-  - CGCS2000 (wkid: 4490) *- China Geodetic coordiante System 2000*
+  - CGCS2000 (wkid: 4490) <span style="font-size:75%">**- China's Geodetic coordiante System 2000*</span>
 
 ---
 
@@ -232,13 +241,13 @@ Clip to your area of interest
 
 ### <b>Web Scenes Concept</b>
 
-- Vehicle for cross platform 3D capabilities
-  - Collection of layers, environment settings, slides
-  - Defines the content of a 3D scene
-- Stored in ArcGIS Online or Enterprise as `portal-item`
+- <span style="color:#D9BA6F">Vehicle </span> for cross platform 3D capabilities
+  - <span style="color:#D9BA6F">Collection </span>of layers, environment settings, slides
+  - Defines the <span style="color:#D9BA6F">content </span>of a 3D scene
+- <span style="color:#D9BA6F">Stored</span> in <span style="color:#D9BA6F">ArcGIS Online or Enterprise</span> as `portal-item`
   - Read and write Web Scenes across the ArcGIS platform<br>
 (ArcGIS Pro, Web Apps, ArcGIS Runtime)
-  - Serialized as JSON
+  - Serialized as <span style="color:#D9BA6F">JSON</span>
 <p></p>
 
 <img class="plain" style="margin-top: 50px" height=185px src="./images/platform-webscene.png" background=none>
