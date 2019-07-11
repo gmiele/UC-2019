@@ -788,11 +788,7 @@ SDCC - Room 15 B
     <code style="margin-bottom: -40px;" class="lang-js">
           Search
         ) {
-    </code>
-    <code style="margin-bottom: -40px;" class="grey">
-
           // ...
-
     </code>
     <code style="margin-bottom: -40px;" class="lang-js">
           var searchWidget = new Search({
@@ -830,9 +826,7 @@ SDCC - Room 15 B
           FeatureLayer,
           Search
         ) {
-
           // ...
-
           var searchWidget = new Search({
             view: view
           });
@@ -857,13 +851,6 @@ SDCC - Room 15 B
 
 <div class="two-columns">
   <div class="left-column">
-<div>Enable on a layer:</div>
-  <div class="code-snippet" style="font-size: 120%;margin-top: 20px;">
-    <pre><code class="lang-js" style="margin-bottom: 20px;">
-  layer.popupEnabled = true;
-</code></pre></div>
-
-<br><br>
 <div>
 Open it programmatically:
 </div>
@@ -895,7 +882,14 @@ Open it programmatically:
 
 <div class="two-columns">
   <div class="left-column">
-    Display attribute using the `PopupTemplate`
+<div>Enable on a layer:</div>
+  <div class="code-snippet" style="font-size: 120%;margin-top: 20px;">
+    <pre><code class="lang-js" style="margin-bottom: 20px;">
+  layer.popupEnabled = true;
+</code></pre></div>
+
+<br><br>
+<div>Configure popup:</div>
     <div class="code-snippet" style="font-size: 130%;">
       <pre><code class="lang-js">
   var template = {
@@ -915,35 +909,36 @@ Open it programmatically:
 
 ---
 
-
 ## Architecture
 <br/>
-<img src="../images/concepts-architecture2.png" width="60%" style="border: none; background: none; box-shadow: none"/>
+<img src="images/concepts-architecture2.png" width="60%" style="border: none; background: none; box-shadow: none"/>
 
 ---
 
-
 ## Architecture
 <br/>
-<img src="../images/concepts-architecture3.png" width="60%" style="border: none; background: none; box-shadow: none"/>
+<img src="images/concepts-architecture3.png" width="60%" style="border: none; background: none; box-shadow: none"/>
 
 ---
 
 
 ## Working with the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html)
 
-<div class="code-snippet" style="font-size: 160%;">
+<div class="code-snippet" style="font-size: 160%; ">
   <pre><code class="lang-ts">
 class SceneView {
   // Camera specifies the view
   camera: Camera;
-
+  </code>
+  <code class="lang-ts">
   // Animations, framing
   goTo(...);
-
+  </code>
+  <code class="lang-ts">
   // Finding graphics at screen locations
   hitTest(...);
-
+  </code>
+  <code class="lang-ts">
   // Converting coordinate systems
   toScreen(mapPoint: Point): ScreenPoint;
   toMap(screenPoint: ScreenPoint): Point;
@@ -964,10 +959,10 @@ class SceneView {
 class Camera {
   // The position of the camera eye in 3D space (x, y + z elevation)
   position: Point;
-
+  </code><code class="lang-ts">
   // The heading angle (towards north in degrees, [0, 360]°)
   heading: number;
-
+  </code><code class="lang-ts">
   // The tilt angle ([0, 180]°, with 0° straight down, 90° horizontal)
   tilt: number;
 }
@@ -984,13 +979,16 @@ class Camera {
 
 <div class="code-snippet" style="font-size: 160%;">
 <button class="play" id="scene-view-camera-button01"></button>
-<pre><code class="lang-ts">const camera = view.camera.clone();
-
+<pre><code class="lang-ts">
+const camera = view.camera.clone();
+</code><code class="lang-ts">
 // Increment the heading of the camera by 5 degrees
 camera.heading += 5;
-
+</code><code class="lang-ts">
 // Set the modified camera on the view
-view.camera = camera;</code></pre>
+view.camera = camera;
+
+</code></pre>
 </div>
 
 
@@ -1016,6 +1014,8 @@ var newHeading = view.camera.heading + 30;
 // go to heading preserves view.center
 view.goTo({
     heading: newHeading
+},{ 
+    speedFactor: 0.5 
 });</code></pre>
 </div>
 
@@ -1047,10 +1047,10 @@ view.goTo({
 <div class="code-snippet small" style="font-size: 160%;">
 <pre><code class="lang-js">// Every time the user clicks on the map...
 view.on("click", function(event) {
-
+</code><code class="lang-js">
   // convert the screen position to map coordinates
   var position = view.toMap(event.x, event.y);
-  
+</code><code class="lang-js">
   // add a cone symbol at that location
   view.graphics.add(new Graphic({
     geometry: position,
@@ -1075,10 +1075,10 @@ view.on("click", function(event) {
 class SceneLayer {
   // Filtering 
   definitionExpression: string;
-
+</code><code class="lang-ts">
   // Renderer assigns each feature a color and style
   renderer: Renderer;
-
+</code><code class="lang-ts">
   // Querying
   queryFeatures(params: Query): FeatureSet;
   queryExtent(params: Query): Extent;
