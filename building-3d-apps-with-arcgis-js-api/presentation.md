@@ -103,12 +103,12 @@ using the ArcGIS API for JavaScript
 <br/>
 
 <b><span style="color:#D9BA6F">Get it today</span></b><br>
-<span style="font-size: 75%">Find doc & samples to get started at https://developers.arcgis.com/javascript</span>
+<span style="font-size: 75%">Find doc & samples to get started at https://js.arcgis.com</span>
 
 ---
 
 
-### <span style="color:#D9BA6F">Desktop </span>3D Requirements
+### <span style="color:#D9BA6F">Desktop browser </span>3D Requirements
 
 - Modern hardware, especially Graphics Card
 - Latest web browsers with WebGL support
@@ -121,7 +121,7 @@ using the ArcGIS API for JavaScript
 ---
 
 
-### <span style="color:#D9BA6F">Mobile </span>3D Requirements
+### <span style="color:#D9BA6F">Mobile browser </span>3D Requirements
 
 - Mobile support introduced last year
 - Officially supported for the following devices
@@ -129,7 +129,7 @@ using the ArcGIS API for JavaScript
   - Android — Samsung S8/S9/S10, Tab S3/S4 (Chrome)
 <br>
 
-<span style="font-size: 75%">*Other devices/browser may work, but only at your own risk* :)</span>
+<span style="font-size: 75%">*Other devices/browser may work, but use modern devices with > 2GB memory</span>
 
 ---
 
@@ -143,13 +143,12 @@ using the ArcGIS API for JavaScript
   - Elevation
 <br>
 
-- <span style="color:#D9BA6F"><b>3D data as Feature layers</b></span>
-- <span style="color:#D9BA6F"><b>3D data as Scene layers (open i3s format)</b></span>
-  - 3D Objects
-  - Integrated Meshes
-  - Point Clouds
-  - Points (from point features)
-  - Building Scene Layer
+- <span style="color:#D9BA6F"><b>3D data as Scene Layers (open i3s format)</b></span>
+  - 3D Object
+  - Integrated Mesh
+  - Point Cloud
+  - Point
+  - Building
 
 ---
 
@@ -174,6 +173,20 @@ using the ArcGIS API for JavaScript
 
 ---
 
+### <b>Web Scene Concept</b>
+
+- <span style="color:#D9BA6F">Vehicle </span> for cross platform 3D capabilities
+  - <span style="color:#D9BA6F">Collection </span>of layers, environment settings, slides
+  - Defines the <span style="color:#D9BA6F">content </span>of a 3D scene
+- <span style="color:#D9BA6F">Stored</span> in <span style="color:#D9BA6F">ArcGIS Online or Enterprise</span> as `portal-item`
+  - Read and write Web Scenes across the ArcGIS platform<br>
+(ArcGIS Pro, Web Apps, ArcGIS Runtime)
+  - Serialized as <span style="color:#D9BA6F">JSON</span>
+<p></p>
+
+<img class="plain" style="margin-top: 50px" height=185px src="./images/platform-webscene.png" background=none>
+
+---
 
 ### Coordinate System Support for Scenes
 
@@ -211,9 +224,9 @@ Visualize data on a full globe
 ### Global scenes
 
 Choose one of the geographic coordinate systems:
-  - WebMercator (wkid: 3857) - ideal to use Esri provided cached data
+  - WebMercator (wkid: 3857) <span style="font-size:75%">- default</span>
   - WGS84 (wkid: 4326)
-  - CGCS2000 (wkid: 4490) <span style="font-size:75%">**- China's Geodetic coordiante System 2000*</span>
+  - CGCS2000 (wkid: 4490) <span style="font-size:75%">**- China Geodetic Coordinate System 2000*</span>
 
 ---
 
@@ -239,20 +252,6 @@ Clip to your area of interest
 ---
 
 
-### <b>Web Scenes Concept</b>
-
-- <span style="color:#D9BA6F">Vehicle </span> for cross platform 3D capabilities
-  - <span style="color:#D9BA6F">Collection </span>of layers, environment settings, slides
-  - Defines the <span style="color:#D9BA6F">content </span>of a 3D scene
-- <span style="color:#D9BA6F">Stored</span> in <span style="color:#D9BA6F">ArcGIS Online or Enterprise</span> as `portal-item`
-  - Read and write Web Scenes across the ArcGIS platform<br>
-(ArcGIS Pro, Web Apps, ArcGIS Runtime)
-  - Serialized as <span style="color:#D9BA6F">JSON</span>
-<p></p>
-
-<img class="plain" style="margin-top: 50px" height=185px src="./images/platform-webscene.png" background=none>
-
----
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
@@ -1226,7 +1225,7 @@ Room 31A<br/>
 
 ## <b>Feature Highlights & Demos</b> 
 
-- [Client side filters](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html)
+- [Client side queries](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html)
 - [Participatory Planning](https://github.com/Esri/participatory-planning)
 <!-- [Building Viewer](https://github.com/Esri/building-viewer)-->
 - [Building Viewer](https://yannikmesserli.github.io/esri-building-viewer/dist)
@@ -1234,7 +1233,7 @@ Room 31A<br/>
 ---
 
 
-### Client side filters
+### Client side queries
 
 <iframe id="scene-view-map-view" data-src="./snippets/scenelayerview-query-stats.html"></iframe>
 
