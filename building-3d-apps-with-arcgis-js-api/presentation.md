@@ -49,7 +49,7 @@ using the ArcGIS API for JavaScript
 <!-- .slide: data-background="../images/bg-1.png" -->
 ### <b>Agenda</b>
 - 3D Platform | Data | API | WebScene
-- Create a basic 3D app
+- Create a simple 3D app
 - Core concepts of the API
 - Working with the API
 - Feature highlights & Demos
