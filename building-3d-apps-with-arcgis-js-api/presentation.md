@@ -922,6 +922,12 @@ Open it programmatically:
 ---
 
 
+## Architecture
+<br/>
+<img src="images/concepts-architecture.png" width="60%" style="border: none; background: none; box-shadow: none"/>
+
+---
+
 ## Working with the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html)
 
 <div class="code-snippet" style="font-size: 160%; ">
