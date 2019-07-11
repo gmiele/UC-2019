@@ -9,7 +9,7 @@
   Gianluca Miele, Esri R&amp;D Center Z&uuml;rich
 </p>
 
-<span style="font-size: 70%">[Live version of this presentation - https://gmiele.github.io/UC-2019/building-3d-apps-with-arcgis-js-api](https://gmiele.github.io/UC-2019/building-3d-apps-with-arcgis-js-api)</span>
+<span style="font-size: 70%">[Live version of this presentation - https://bit.ly/2XEZP3Y](https://bit.ly/2XEZP3Y)</span>
 
 ---
 
@@ -127,9 +127,8 @@ using the ArcGIS API for JavaScript
 - Officially supported for the following devices
   - iOS — iPhone 8/XS, iPad Pro (Safari)
   - Android — Samsung S8/S9/S10, Tab S3/S4 (Chrome)
-<br>
 
-<span style="font-size: 75%">*Other devices/browser may work, but use modern devices with > 2GB memory</span>
+   <span style="font-size: 75%">*Other devices/browser may work, but use modern devices with > 2GB memory</span>
 
 ---
 
@@ -195,7 +194,8 @@ using the ArcGIS API for JavaScript
 | One Scene | -> | One coordiante system |
 | Cached data | -> | must match defined system |
 | Feature & dynamic data | -> | projected on-the-fly |
-| Coordinate systems | -> | type of scenes & capabilities |
+
+<p class="fragment" data-fragment-index="1">Global vs. Local Scenes</p>
 
 <!--
 - One scene -> One coordiante system
@@ -245,7 +245,7 @@ Visualize data in a local planar way
 
 Choose one of the following options
 - WebMercator (wkid: 3857)
-- any projected coordinate system
+- Any Projected Coordinate System
 
 Clip to your area of interest
 
@@ -1227,8 +1227,7 @@ Room 31A<br/>
 
 - [Client side queries](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayerview-query-stats/live/index.html)
 - [Participatory Planning](https://github.com/Esri/participatory-planning)
-<!-- [Building Viewer](https://github.com/Esri/building-viewer)-->
-- [Building Viewer](https://yannikmesserli.github.io/esri-building-viewer/dist)
+- [Building Viewer](https://esri.github.io/building-viewer/dist/)
 
 ---
 
@@ -1255,11 +1254,6 @@ Room 31A<br/>
 
 ---
 
-### Do more with Buildings [Sample](https://developers.arcgis.com/javascript/latest/sample-code/building-scene-layer-slice/index.html)
-
-<iframe id="scene-view-map-view" data-src="./snippets/bsl-slice-example.html"></iframe>
-
----
 
 ### There is one more...
 
